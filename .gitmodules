@@ -1,0 +1,3 @@
+[submodule "frontend/angular"]
+	path = frontend/angular
+	url = https://github.com/MarlonJD/AngularJWT

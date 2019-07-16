@@ -316,7 +316,7 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Register</h2>\n<div class=\"row\" *ngIf=\"!_userService.access\">\n  <div class=\"col-sm-3\">\n    <label>Name:</label><br />\n    <input type=\"text\" name=\"register-name\" [(ngModel)]=\"register.name\">\n    <span *ngFor=\"let error of _userService.errors.name\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-3\">\n    <label>Email:</label><br />\n    <input type=\"text\" name=\"register-email\" [(ngModel)]=\"register.email\">\n    <span *ngFor=\"let error of _userService.errors.email\"><br />{{ error }}</span></div>\n  <div class=\"col-sm-3\">\n    <label>Password:</label><br />\n    <input type=\"password\" name=\"register-password\" [(ngModel)]=\"register.password\">\n    <span *ngFor=\"let error of _userService.errors.password\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-3\">\n    <button (click)=\"registerUser()\" class=\"btn btn-primary\">Register</button>&nbsp;\n  </div>\n  <div class=\"col-sm-12\">\n    <span *ngFor=\"let error of _userService.errors.non_field_errors\">{{ error }}<br /></span>\n  </div>\n</div>\n\n\n<h2>Login</h2>\n<div class=\"row\" *ngIf=\"!_userService.access\">\n  <div class=\"col-sm-4\">\n    <label>Email:</label><br />\n    <input type=\"text\" name=\"login-email\" [(ngModel)]=\"user.email\">\n    <span *ngFor=\"let error of _userService.errors.email\"><br />{{ error }}</span></div>\n  <div class=\"col-sm-4\">\n    <label>Password:</label><br />\n    <input type=\"password\" name=\"login-password\" [(ngModel)]=\"user.password\">\n    <span *ngFor=\"let error of _userService.errors.password\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-4\">\n    <button (click)=\"login()\" class=\"btn btn-primary\">Log In</button>&nbsp;\n  </div>\n  <div class=\"col-sm-12\">\n    <span *ngFor=\"let error of _userService.errors.non_field_errors\">{{ error }}<br /></span>\n  </div>\n</div>\n<div class=\"row\" *ngIf=\"_userService.access\">\n  <div class=\"col-sm-12\">You are logged in as {{ _userService.email }}.<br />\n    Token Expires: {{ _userService.token_expires }}<br />\n    <button (click)=\"refreshToken()\" class=\"btn btn-primary\">Refresh Token</button>&nbsp;\n    <button (click)=\"logout()\" class=\"btn btn-primary\">Log Out</button>&nbsp;\n  </div>\n</div>\n\n<button (click)=\"updateData()\"></button>\n\n<h2 class=\"mt-3\">Micro Blog Posts</h2>\n<div *ngFor=\"let post of posts\">\n  <div class=\"row mb-3\">\n    <label class=\"col-md-2\">By:</label>\n    <div class=\"col-md-2 mb-1\">{{ post.user }}</div>\n    <label class=\"col-md-2\">Date:</label>\n    <div class=\"col-md-6\">{{ post.date }}</div>\n    <div class=\"col-md-12\">{{ post.body }}</div>\n  </div>\n</div>\n\n<h3>Create a new post:</h3>\n\n<div class=\"row mb-1\">\n  <label class=\"col-md-3\">Enter your post:</label>\n  <div class=\"col-md-9 mb-1\"><input type=\"text\" name=\"body\" [(ngModel)]=\"new_post.body\"></div>\n  <div class=\"col-md-2 offset-3\">\n    <button (click)=\"createPost()\" class=\"btn btn-primary\">Save</button>\n  </div>\n</div>\n"
+module.exports = "<h2>Register Yo!</h2>\n<div class=\"row\" *ngIf=\"!_userService.access\">\n  <div class=\"col-sm-3\">\n    <label>Name:</label><br />\n    <input type=\"text\" name=\"register-name\" [(ngModel)]=\"register.name\">\n    <span *ngFor=\"let error of _userService.errors.name\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-3\">\n    <label>Email:</label><br />\n    <input type=\"text\" name=\"register-email\" [(ngModel)]=\"register.email\">\n    <span *ngFor=\"let error of _userService.errors.email\"><br />{{ error }}</span></div>\n  <div class=\"col-sm-3\">\n    <label>Password:</label><br />\n    <input type=\"password\" name=\"register-password\" [(ngModel)]=\"register.password\">\n    <span *ngFor=\"let error of _userService.errors.password\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-3\">\n    <button (click)=\"registerUser()\" class=\"btn btn-primary\">Register</button>&nbsp;\n  </div>\n  <div class=\"col-sm-12\">\n    <span *ngFor=\"let error of _userService.errors.non_field_errors\">{{ error }}<br /></span>\n  </div>\n</div>\n\n\n<h2>Login</h2>\n<div class=\"row\" *ngIf=\"!_userService.access\">\n  <div class=\"col-sm-4\">\n    <label>Email:</label><br />\n    <input type=\"text\" name=\"login-email\" [(ngModel)]=\"user.email\">\n    <span *ngFor=\"let error of _userService.errors.email\"><br />{{ error }}</span></div>\n  <div class=\"col-sm-4\">\n    <label>Password:</label><br />\n    <input type=\"password\" name=\"login-password\" [(ngModel)]=\"user.password\">\n    <span *ngFor=\"let error of _userService.errors.password\"><br />{{ error }}</span>\n  </div>\n  <div class=\"col-sm-4\">\n    <button (click)=\"login()\" class=\"btn btn-primary\">Log In</button>&nbsp;\n  </div>\n  <div class=\"col-sm-12\">\n    <span *ngFor=\"let error of _userService.errors.non_field_errors\">{{ error }}<br /></span>\n  </div>\n</div>\n<div class=\"row\" *ngIf=\"_userService.access\">\n  <div class=\"col-sm-12\">You are logged in as {{ _userService.name }}.<br />\n    Token Expires: {{ _userService.token_expires }}<br />\n    <button (click)=\"refreshToken()\" class=\"btn btn-primary\">Refresh Token</button>&nbsp;\n    <button (click)=\"logout()\" class=\"btn btn-primary\">Log Out</button>&nbsp;\n  </div>\n</div>\n\n<button (click)=\"updateData()\"></button>\n\n<h2 class=\"mt-3\">Micro Blog Posts</h2>\n<div *ngFor=\"let post of posts\">\n  <div class=\"row mb-3\">\n    <label class=\"col-md-2\">By:</label>\n    <div class=\"col-md-2 mb-1\">{{ post.user }}</div>\n    <label class=\"col-md-2\">Date:</label>\n    <div class=\"col-md-6\">{{ post.date }}</div>\n    <div class=\"col-md-12\">{{ post.body }}</div>\n  </div>\n</div>\n\n<h3>Create a new post:</h3>\n\n<div class=\"row mb-1\">\n  <label class=\"col-md-3\">Enter your post:</label>\n  <div class=\"col-md-9 mb-1\"><input type=\"text\" name=\"body\" [(ngModel)]=\"new_post.body\"></div>\n  <div class=\"col-md-2 offset-3\">\n    <button (click)=\"createPost()\" class=\"btn btn-primary\">Save</button>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -376,19 +376,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blog_post_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blog-post.service */ "./src/app/blog-post.service.ts");
 /* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user.service */ "./src/app/user.service.ts");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @auth0/angular-jwt */ "./node_modules/@auth0/angular-jwt/index.js");
 
 
 
 
  // Angular 6/RxJS 6
+
+const helper = new _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_5__["JwtHelperService"]();
 let AppComponent = class AppComponent {
     constructor(_blogPostService, _userService) {
         this._blogPostService = _blogPostService;
         this._userService = _userService;
     }
     ngOnInit() {
-        this._userService.rememberMe();
-        this.getPosts();
         this.new_post = {};
         this.user = {
             email: '',
@@ -399,6 +400,11 @@ let AppComponent = class AppComponent {
             email: '',
             password: ''
         };
+        this.rememberMe();
+    }
+    rememberMe() {
+        this._userService.rememberMe();
+        this.getPosts();
     }
     registerUser() {
         this._userService.registerUser(this.register);
@@ -407,6 +413,7 @@ let AppComponent = class AppComponent {
         this._userService.login({ 'email': this.user.email, 'password': this.user.password });
         console.log("LoggedIn:", this._userService.isLoggedIn());
         console.log("LoggedOut:", this._userService.isLoggedOut());
+        this.getPosts();
     }
     refreshToken() {
         this._userService.refreshToken();
@@ -434,7 +441,7 @@ let AppComponent = class AppComponent {
         () => console.log('done loading posts'));
     }
     createPost() {
-        this._blogPostService.create(this.new_post, this.user.access).subscribe(data => {
+        this._blogPostService.create(this.new_post).subscribe(data => {
             // refresh the list
             this.getPosts();
             return true;
@@ -464,21 +471,23 @@ AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
   \*******************************/
-/*! exports provided: AppModule */
+/*! exports provided: tokenGetter, AppModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tokenGetter", function() { return tokenGetter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _blog_post_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blog-post.service */ "./src/app/blog-post.service.ts");
-/* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./user.service */ "./src/app/user.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _blog_post_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blog-post.service */ "./src/app/blog-post.service.ts");
+/* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./user.service */ "./src/app/user.service.ts");
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @auth0/angular-jwt */ "./node_modules/@auth0/angular-jwt/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 
 
 
@@ -488,24 +497,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+function tokenGetter() {
+    return localStorage.getItem("access");
+}
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
+            _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_8__["JwtModule"].forRoot({
+                config: {
+                    tokenGetter: tokenGetter,
+                    whitelistedDomains: ["127.0.0.1", "127.0.0.1:8000", "localhost:8000"],
+                    blacklistedRoutes: ["example.com/examplebadroute/"],
+                }
+            })
         ],
         providers: [
-            _blog_post_service__WEBPACK_IMPORTED_MODULE_7__["BlogPostService"],
-            _user_service__WEBPACK_IMPORTED_MODULE_8__["UserService"]
+            _blog_post_service__WEBPACK_IMPORTED_MODULE_6__["BlogPostService"],
+            _user_service__WEBPACK_IMPORTED_MODULE_7__["UserService"]
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
 
@@ -541,7 +561,7 @@ let BlogPostService = class BlogPostService {
         return this.http.get('/api/posts/');
     }
     // send a POST request to the API to create a new data object
-    create(post, token) {
+    create(post) {
         return this.http.post('/api/posts/', JSON.stringify(post), this.getHttpOptions());
     }
     // helper function to build the HTTP headers
@@ -549,7 +569,6 @@ let BlogPostService = class BlogPostService {
         return {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 'Content-Type': 'application/json',
-                'Authorization': 'JWT ' + this._userService.access
             })
         };
     }
@@ -763,7 +782,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\MarlonJD\Desktop\test\drf\frontend\angular\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/ukarahan/angularTest/DjangoAngularJWT/frontend/angular/src/main.ts */"./src/main.ts");
 
 
 /***/ })

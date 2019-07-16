@@ -47,7 +47,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
         return instance
 
-class BlogPostSerializer(serializers.ModelSerializer):
+class BlogPostSerializer(serializers.HyperlinkedModelSerializer):
     user = serializers.StringRelatedField(many=False)
 
     class Meta:
